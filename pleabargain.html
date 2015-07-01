@@ -31,17 +31,9 @@
 	<!-- Facebook Open Graph Metatags Ends -->
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-	<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/project-style.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css" media="none" onload="if(media!='all')media='all'">
-
-	<script type="text/javascript" async src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
 </head>
 <body>
 
@@ -336,5 +328,16 @@
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 <script type="text/javascript" async src="js/retina.min.js"></script>
+<script type="text/javascript" async src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		new WOW().init();
+		$("#demosMenu").change(function(){
+			window.location.href = $(this).find("option:selected").attr("id") + '.html';
+		});
+	});
+</script>
 </body>
 </html>
