@@ -1,0 +1,555 @@
+@CHARSET "ISO-8859-1";
+@import url('AkkuratPro-Light.css');
+@import url('AkkuratPro-LightItalic.css');
+@import url('Akkurat-Bold.css');
+@import url('AkkuratPro-BoldItalic.css');
+/*@import url('Elena-Regular.css');*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic);
+
+@media only screen and (max-width : 1200px) {
+  #section0-image {
+    width: 55%;
+    position: relative;
+    top: 40vh;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width : 979px) {
+  #infoMenu{
+  	height: 20px;
+  	color: #f2f2f2;
+  	position:fixed;
+  	z-index:100;
+  	top:0px;
+  	width:100%;
+  	text-align:right;
+  	font-size:0.9em;
+  	/*padding:8px 0 8px 0;*/
+  }
+  .section h1 {
+    font-size: 5em;
+  }
+  .section h2 {
+    width: 50%;
+    font-size: 15px;
+  }
+  #section0-image {
+    width: 55%;
+    position: relative;
+    top: 40vh;
+  }
+  #section1-image {
+    width: 25%;
+    position: relative;
+    top: 35vh;
+  }
+  #medickitbutton {
+    font-size: 0.8em;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #ffffff !important;
+  }
+}
+
+/* phone portrait or iPad */
+@media only screen and (max-width : 768px) {
+  #infoMenu{
+    height: 20px;
+    color: #f2f2f2;
+    position:fixed;
+    z-index:100;
+    top:0px;
+    width:100%;
+    text-align:right;
+  }
+  .section h1 {
+    font-size: 3em;
+  }
+  .section h2 {
+    width: 70%;
+    font-size: 10px;
+  }
+  #section0-image {
+    width: 55%;
+    position: relative;
+    top: 45vh;
+  }
+  #section1-image {
+    width: 25%;
+    position: relative;
+    top: 35vh;
+  }
+  #medickitbutton {
+    font-size: 0.7em;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #ffffff !important;
+  }
+}
+
+
+@media only screen and (max-width : 480px) {
+  .section h1 {
+    font-size: 3em;
+  }
+  .section h2{
+    width: 70%;
+		font-size: 7px;
+	}
+  .navbar-default .navbar-nav>li>a {
+    text-align: center;
+    padding: 10px 0px;
+  }
+  #section0-image {
+    width: 85%;
+    position: relative;
+    top: 45vh;
+  }
+  #section1-image {
+    width: 55%;
+    position: relative;
+    top: 35vh;
+  }
+  #medickitbutton {
+    font-size: 0.5em;
+  }
+  .navbar-default .navbar-nav>li>a {
+    color: #a8a8a8 !important;
+    background-color: rgba(255,255,255,0.95) !important;
+  }
+  #infoMenu li a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #a8a8a8 !important;
+  }
+  #infoMenu li a:after {
+    content: '';
+    height: 0.5px;
+    bottom: -0.5px;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    transition: 0.3s all ease-in-out;
+  }
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  background: #ffffff !important;
+}
+
+/* Top Nav Menu Hover */
+#infoMenu li a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #ffffff;
+}
+#infoMenu li a:after {
+  content: '';
+  height: 1px;
+  bottom: -1px;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.section-one {
+  background: #6ed3c2;
+
+}
+
+.tocenter {
+  margin:0 auto;
+  display: inline;
+}
+
+#project-title {
+  font-family:AkkuratPro-Light, 'Arial', sans-serif;
+  font-weight:100;
+  color: #000000;
+}
+
+#project-brief {
+  font-family: Elena-Regular, 'Georgia', 'Times New Roman', serif;
+  color: #000000;
+}
+
+/* Style for our header texts
+* --------------------------------------- */
+.section h1{
+  font-family:Akkurat-Bold, 'Arial', sans-serif;
+  font-weight:700;
+  line-height:auto;
+  color: #fff;
+  margin:0;
+  padding:0;
+  position: relative;
+  /*top: -35vh;*/
+  top: 25vh;
+}
+
+.section h2{
+  font-family: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+  /*font-family: Elena-Regular, 'Georgia', 'Times New Roman', serif;*/
+  font-weight: 300;
+  line-height: 1.5;
+  color: #ffffff;
+  position: relative;
+  top: 27vh;
+  text-align: center;
+  margin: auto;
+  font-size: 18px;
+}
+
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+}
+
+
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+#section0,
+#section1,
+#section2,
+#section3{
+  background-size: cover;
+}
+
+/* Defining each sectino background and styles
+* --------------------------------------- */
+#section0{
+  background: #a8a8a8;
+  /*padding: 10% 0 0 0;*/
+}
+#section1{
+  background: #cbe096;
+}
+#section2{
+  background: #d1814a;
+  /*padding: 6% 0 0 0;*/
+}
+#section3{
+  background: #141821;
+}
+/*#section3 h1{
+  color: #000;
+}*/
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+  font-size: 1.5vh;
+  font-family:AkkuratPro-Light, 'Arial', sans-serif;
+}
+
+/* BUTTON CSS
+------------------------------------------- */
+#medickitbutton {
+  font-family:AkkuratPro-Light, 'Arial', sans-serif;
+  position: relative;
+  top: 30vh;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 2px solid white;
+  padding: 8px 15px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, #ffffff 50%);
+  -webkit-transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .7s ease .1s;
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .7s ease .1s;
+}
+#medickitbutton:hover {
+  color: #a8a8a8;
+}
+a.button:hover{
+  color:rgba(255, 255, 255, 1);
+  background-position: -100% 100%;
+}
+
+b {
+font-family:Akkurat-Bold;
+}
+
+/* Toggle button color */
+.navbar-default .navbar-toggle {
+  border-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0 !important;
+
+}
+
+.navbar-collapse {
+  border: 0 !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0) !important;
+  border-top: 0 !important;
+}
+
+/*.navbar-default .navbar-collapse {
+  background: rgba(18,17,15,0.4);
+}*/
+
+.navbar {
+  border: none;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+.navbar, .navbar-default {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  -webkit-transition: color,0.6s,ease-in;
+  -moz-transition: color,0.6s,ease-in;
+  transition: color,0.6s,ease-in;
+}
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-weight: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#download{
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+	text-decoration:none;
+	color:#fff;
+}
+#download:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	background-color: #2F96B4;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-ms-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+/*#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}*/
+
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+
+
+
+/* Demos Menu
+ * --------------------------------------- */
+ #demosMenu{
+	position:fixed;
+	bottom: 10px;
+	right:10px;
+	z-index: 999;
+ }
