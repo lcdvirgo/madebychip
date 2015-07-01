@@ -1,28 +1,43 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-
+<html prefix="og: http://ogp.me/ns#">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Made By Chip</title>
-	<meta name="author" content="Chip Dong Lim" />
-	<meta name="description" content="fullPage full-screen backgrounds." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
-	<meta name="Resource-type" content="Document" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>About</title>
 
-	<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
+	<!-- Facebook Open Graph Metatags Starts -->
+	<meta property="og:title" content="About" />
+	<meta property="og:site_name" content="Made By Chip"/>
+	<meta property="og:url" content="http://madebychip.com/about.html" />
+	<meta property="og:description" content="I am Chip Dong Lim, an interaction and visual designer currently living in Seattle, WA. Born and raised in Malaysia, I was lucky enough to receive a scholarship to further my undergraduate studies in the University of Washington, Seattle and recently graduated with a Bachelor's of Design in Interaction Design." />
+	<meta property="og:image" content="http://madebychip.com/images/about/DSC_8262_portrait.jpg" />
+	<meta property="og:image:width" content="902" />
+	<meta property="og:image:height" content="602" />
+	<meta property="fb:app_id" content="372446219617504" />
+	<meta property="og:type" content="article" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="article:author" content="http://www.madebychip.com" />
+	<meta property="article:publisher" content="http://www.madebychip.com" />
+	<meta property="article:tag" content="madebychip,about,design,chip,University of Washington,interaction,motion,branding,visual design,design thinking,human-centered innovation,music,hackathons, entrepreneurship,technology,social,education,healthcare" />
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:description" content="I am Chip Dong Lim, an interaction and visual designer currently living in Seattle, WA. Born and raised in Malaysia, I was lucky enough to receive a scholarship to further my undergraduate studies in the University of Washington, Seattle and recently graduated with a Bachelor's of Design in Interaction Design."/>
+	<meta name="twitter:title" content="About"/>
+	<meta name="twitter:site" content="@lcdvirgo"/>
+	<meta name="twitter:domain" content="Made By Chip"/>
+	<meta name="twitter:image:src" content="http://madebychip.com/images/about/DSC_8262_portrait.jpg"/>
+	<meta name="twitter:creator" content="@lcdvirgo"/>
+	<!-- Facebook Open Graph Metatags Ends -->
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/project-style.css" media="none" onload="if(media!='all')media='all'">
 	<link rel="stylesheet" type="text/css" href="css/animate.min.css" media="none" onload="if(media!='all')media='all'">
-
-	<script type="text/javascript" async src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" async src="js/examples.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript">
-		new WOW().init();
-	</script>
 	<style>
+	input, textarea { /* Because Safari Mobile gives input buttons rounded corners */
+  	-webkit-appearance: none;
+  	-webkit-border-radius: 0;
+	}
 	::-webkit-input-placeholder {
    color: #ebebeb;
 	}
@@ -178,26 +193,6 @@
 		</div>
 </div>
 
-<!-- <div class="jumbotron">
-		<div class="container">
-			<br>
-			<h2 id="project-brief">About Chip</h2>
-			<br>
-			<br>
-			<br>
-			<div class="row">
-				<div class="col-md-6">
-					<h4 id="project-desc">I am Chip Dong Lim, an interaction and visual designer currently living in Seattle, WA. Born and raised in Malaysia, I was lucky enough to receive a scholarship to further my undergraduate studies in the University of Washington, Seattle and recently graduated with a Bachelor's of Design in Interaction Design.</h4>
-					<br>
-					<h4 id="project-desc">During my junior year in high school, my science teacher introduced me to Google Page Creator, a tool for basic website design without writing a single line of code. I became interested and taught myself the web programming language. Mistakenly thought that web design is computer science, I took two computer science introductory courses during my freshman year and learned my mistakes the hard way. After taking a design introductory class with Professor Karen Cheng, I realized that design is what I have been interested all along and fall in love with it ever since.</h4>
-				</div>
-				<div class="col-md-6">
-					<h4 id="project-desc">As a designer, I am happy to help people to solve problems and craft a great user experience. I have extensive experience designing in the digital medium and work with projects involving interaction, motion, branding and visual design. I embrace design thinking and human-centered innovation. My primary interests besides design include music, hackathons, entrepreneurship, technology, social, education, and recently healthcare.</h4>
-				</div>
-			</div>
-		</div>
-</div> -->
-
 <div id="infoMenu">
 	<nav class="navbar navbar-default" style="padding-top: 2vh; padding-bottom: 3vh;">
 		<div class="container-fluid">
@@ -226,5 +221,17 @@
 </div>
 <script type="text/javascript" async src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" async src="js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" async src="js/retina.min.js"></script>
+<script type="text/javascript" async src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		new WOW().init();
+		$("#demosMenu").change(function(){
+			window.location.href = $(this).find("option:selected").attr("id") + '.html';
+		});
+	});
+</script>
 </body>
 </html>
