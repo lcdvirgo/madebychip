@@ -1,9 +1,56 @@
 @CHARSET "ISO-8859-1";
-@import url('AkkuratPro-Light.css');
-@import url('AkkuratPro-LightItalic.css');
-@import url('Akkurat-Bold.css');
-@import url('AkkuratPro-BoldItalic.css');
-/*@import url('Elena-Regular.css');*/
+@font-face {
+	font-family:'AkkuratPro-Light';
+	src: url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.eot');
+	src: url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.woff') format('woff'),
+		url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.ttf') format('truetype'),
+		url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.otf') format('opentype'),
+		url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.svg#AkkuratPro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'AkkuratPro-LightItalic';
+	src: url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.eot');
+	src: url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.woff') format('woff'),
+		url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.ttf') format('truetype'),
+		url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.otf') format('opentype'),
+		url('fonts/AkkuratPro-LightItalic/AkkuratPro-LightItalic_gdi.svg#AkkuratPro-LightItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'Akkurat-Bold';
+	src: url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.eot');
+	src: url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.woff') format('woff'),
+		url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.ttf') format('truetype'),
+		url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.otf') format('opentype'),
+		url('fonts/AkkuratPro-Bold/Akkurat-Bold_gdi.svg#Akkurat-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
+@font-face {
+	font-family:'AkkuratPro-BoldItalic';
+	src: url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.eot');
+	src: url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.woff') format('woff'),
+		url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.ttf') format('truetype'),
+		url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.otf') format('opentype'),
+		url('fonts/AkkuratPro-BoldItalic/AkkuratPro-BoldItalic_gdi.svg#AkkuratPro-BoldItalic') format('svg');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	unicode-range: U+0020-25CA;
+}
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic);
 
 @media only screen and (max-width : 1200px) {
