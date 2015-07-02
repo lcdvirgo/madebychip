@@ -78,6 +78,21 @@
 	  background-position: -100% 100%;
 	}
 	</style>
+
+	<script type="text/javascript" async src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" async src="js/jquery.mobile.custom.min.js"></script>
+	<script type="text/javascript" async src="js/retina.min.js"></script>
+	<script type="text/javascript" async src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			new WOW().init();
+			$("#demosMenu").change(function(){
+				window.location.href = $(this).find("option:selected").attr("id") + '.html';
+			});
+		});
+	</script>
 </head>
 <body>
 <div class="container-full" id="full">
@@ -219,19 +234,5 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 </div>
-<script type="text/javascript" async src="js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" async src="js/jquery.mobile.custom.min.js"></script>
-<script type="text/javascript" async src="js/retina.min.js"></script>
-<script type="text/javascript" async src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" async src="js/fontsmoothie.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		new WOW().init();
-		$("#demosMenu").change(function(){
-			window.location.href = $(this).find("option:selected").attr("id") + '.html';
-		});
-	});
-</script>
 </body>
 </html>
