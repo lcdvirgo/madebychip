@@ -1,5 +1,5 @@
 @CHARSET "ISO-8859-1";
-@CHARSET "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic);
 @font-face {
 	font-family:'AkkuratPro-Light';
 	src: url('fonts/AkkuratPro-Light/AkkuratPro-Light_gdi.eot');
@@ -52,8 +52,6 @@
 	font-stretch: normal;
 	unicode-range: U+0020-25CA;
 }
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700,700italic);
-
 
 @media only screen and (max-width : 1200px) {
   #section0-image {
