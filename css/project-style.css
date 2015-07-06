@@ -252,6 +252,19 @@
   color: #21272d;
 }
 
+#project-desc a {
+  border-bottom: 1px dotted #858585;
+  color: #000000;
+  text-decoration: none;
+}
+
+#project-desc a:hover, #project-desc a:focus {
+	border-bottom:1px dotted #858585;
+	-moz-transition:all .4s ease-in-out;-o-transition:all .4s ease-in-out;
+	-webkit-transition:all .4s ease-in-out;color:#bfad84;
+	transition:all .4s ease-in-out;
+}
+
 .jumbotron {
   background: #ffffff !important;
 }
