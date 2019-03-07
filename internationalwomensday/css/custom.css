@@ -1,0 +1,80 @@
+/*! Place your custom styles here */
+.bg--primary {
+    background: #19337D;
+}
+.bg-second-bloc {
+    background: #EDDDDF;
+}
+.bg-third-bloc {
+    background: #FFFFFF;
+}
+.bg-fourth-bloc {
+    background: #F1F6F4;
+}
+.bg-fifth-bloc {
+    background: #DBDFEA;
+}
+.bg-sixth-bloc {
+    background: #F4F4F5;
+}
+.bg-seventh-bloc {
+    background: #FFE7CB;
+}
+.bg-eight-bloc {
+    background: #8F2E6E;
+}
+.bg-eight-bloc p, .bg-eight-bloc p.lead.subtitle, .bg-eight-bloc h2, .bg-ninth-bloc p, .bg-ninth-bloc p.lead.subtitle, .bg-ninth-bloc h1 {
+  color: #FFFFFF;
+}
+.bg-ninth-bloc {
+    background: #252525;
+}
+.socicon-twitter:before {
+    content: "\e08d";
+}
+
+@media all and (min-width: 991px) {
+  h1 {
+      font-size: 4.6em;
+  }
+}
+@media all and (max-width: 767px) {
+  h1 {
+      font-size: 4.0em;
+  }
+}
+@media all and (max-width: 480px) {
+  .hero-img {
+      margin-top: 3.71428571em;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  color: #252525;
+  font-weight: 700;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+p.subtitle {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #393C40;
+}
+p.lead {
+  line-height: 1.8;
+}
+.bg-second-bloc p {
+  color: #393C40;
+}
