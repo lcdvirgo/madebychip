@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Part II: The 10 Best Web3 Design Inspiration Sites | Chip Dong Lim</title>
+    <meta property="og:title" content="Chip Dong Lim" />
+    <meta property="og:site_name" content="Chip Dong Lim" />
+    <meta property="og:url" content="http://madebychip.com" />
+    <meta property="og:description" content="Chip Dong Lim is a Lead Product Designer at Grab, helping driver-partners connect to consumers in a fast, highly reliable, and cost-efficient platform manner. For the past 8 years, Chip led design strategies with startups and corporates including TradeGecko (acquired by Intuit for $80m), IBM Design Austin, Fave Group (acquired by Pine Labs India for $45m), and now Grab (Southeast Asia decacorn). Previously, he was an entrepreneur running a mobile-first medical management platform serving mobile clinics and aged care facilities." />
+    <meta property="og:image" content="madebychip_preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="fb:app_id" content="372446219617504" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="article:author" content="http://www.madebychip.com" />
+    <meta property="article:publisher" content="http://www.madebychip.com" />
+    <meta property="article:tag" content="design,web,print,branding,graphic design,visual,interactive,Seattle,strategy,studio,designer,work,research,technology" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Chip Dong Lim is a Lead Product Designer at Grab, helping driver-partners connect to consumers in a fast, highly reliable, and cost-efficient platform manner. For the past 8 years, Chip led design strategies with startups and corporates including TradeGecko (acquired by Intuit for $80m), IBM Design Austin, Fave Group (acquired by Pine Labs India for $45m), and now Grab (Southeast Asia decacorn). Previously, he was an entrepreneur running a mobile-first medical management platform serving mobile clinics and aged care facilities." />
+    <meta name="twitter:title" content="Made By Chip" />
+    <meta name="twitter:site" content="@lcdvirgo" />
+    <meta name="twitter:domain" content="Made By Chip" />
+    <meta name="twitter:image:src" content="madebychip_preview.png" />
+    <meta name="twitter:creator" content="@lcdvirgo" />
+  <link rel="stylesheet" href="style.css">
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
+  <script type="module" src="zero-md.min.js"></script>
+</head>
+<body id="theme">
+    <div class="content">
+        <h2 class="logo"><a href="index.html">Chip Dong Lim</a></h2>
+        <br>
+        <zero-md src="part-ii-the-10-best-web3-design-inspiration-sites.md"></zero-md>
+    </div>
+    <hr>
+    <br>
+    <div id="app">
+        <table v-if="movies.length">
+            <tbody>
+            <tr v-for="movie in movies">
+                <td>
+                <div class="float-container">
+        
+                    <div class="float-child" style="width: 25%; float: left;">
+                    <div class="green"><span class="blog-description">{{movie.Year}}</span></div>
+                    </div>
+                    
+                    <div class="float-child" style="width: 75%; float: left;">
+                    <div class="blue"><a :href="movie.Url">
+                        <h3 class="blog-title">{{movie.Title}}</h3>
+                    </a>
+                    <p class="blog-description">{{movie.Description}}</p></div>
+                    </div>
+                    <br>
+                </div> 
+                </td>
+            </tr>
+            </tbody>
+        </table> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <footer id="footerNavigation">
+            <a class="megaLink" data-hover="false" href="index.html">Home</a>
+            <a class="megaLink active" data-hover="false" href="essays.html">Essays</a>
+            <a class="megaLink" data-hover="false" href="about.html">About</a>
+            <a class="megaLink" data-hover="false">
+                <button id="toggle-btn" class="dark-mode-toggle">
+                    <img id="changesvg" src="assets/moon.svg">
+                </button>
+            </a>
+        </footer>
+    </div> 
+  <script src="script.js"></script>    
+  <script src="darkmode.js"></script>     
+</body>
+</html>
