@@ -76,13 +76,10 @@ Secondly, Apple has announced a ban on all COVID-19 themed apps and Google has a
 
 
 
-<div class="video-cover">
-  <video width="100%" muted="" autoplay="" playsinline="" loop="" data-object-fit="contain">
-    <source src="cosmos-chatbot.mp4" type="video/mp4">
-    <source src="cosmos-chatbot.webm" type="video/webm">
-    Your browser doesn't support HTML5 video tag.
-  </video>
-</div>
+<video controls autoplay loop muted playsinline>
+  <source src="cosmos-chatbot.mp4">
+</video>
+
 <br>
 
 ![cosmos-chatbot-flow](cosmos-chatbot-flow.png)
