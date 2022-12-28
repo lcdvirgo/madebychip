@@ -29,12 +29,27 @@
     body#theme p, h1 {
         margin: 0 !important;
     }
+    video{
+        width:100%;
+    }
+    .toggleMuted{
+        display:block;
+    }
   </style>  
   <link rel="stylesheet" href="style.css">
   <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script>
   <script type="module" src="zero-md.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+    var videoElem = document.querySelector('video');
+    var toggleMuted = document.querySelector('.toggleMuted');
+    toggleMuted.addEventListener('click', function(){
+        videoElem.muted ^= 1;
+    }, false);
+    }, false);
+  </script>  
 </head>
 <body id="theme">
     <div class="content">
