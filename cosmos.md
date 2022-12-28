@@ -3,12 +3,12 @@
 
 
 <div class="video-cover">
-  <video width="100%" muted="" autoplay="" playsinline="" loop="" data-object-fit="contain">
+  <video width="100%" controls autoplay loop muted playsinline data-object-fit="contain">
     <source src="cosmos-dashboard.mp4" type="video/mp4">
     <source src="cosmos-dashboard.webm" type="video/webm">
-    Your browser doesn't support HTML5 video tag.
   </video>
 </div>
+
 
 ## Problem
 
